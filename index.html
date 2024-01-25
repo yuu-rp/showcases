@@ -9,33 +9,45 @@
 <body>
     <script type="text/javascript">
     
-        var browserTests = [
-            // "audio",
-            "availableScreenResolution",
-            "canvas",
+        // var browserTests = [
+        //     // "audio",
+        //     "availableScreenResolution",
+        //     "canvas",
+        //     "colorDepth",
+        //     // "cookies",
+        //     "cpuClass",
+        //     "deviceDpi",
+        //     // "doNotTrack",
+        //     "indexedDb",
+        //     // "installedFonts",
+        //     // "language",
+        //     // "localIp",
+        //     "localStorage",
+        //     "pixelRatio",
+        //     "platform",
+        //     // "plugins",
+        //     "processorCores",
+        //     "screenResolution",
+        //     "sessionStorage",
+        //     // "timezoneOffset",
+        //     "touchSupport",
+        //     "userAgent",
+        //     "webGl"
+        // ];
+        var deviceTests = [
+            "audio",
             "colorDepth",
-            // "cookies",
             "cpuClass",
             "deviceDpi",
-            // "doNotTrack",
-            "indexedDb",
-            // "installedFonts",
-            // "language",
-            // "localIp",
-            "localStorage",
-            "pixelRatio",
+            "localIp",
             "platform",
-            // "plugins",
+            "installedFonts",
             "processorCores",
+            "publicIp",
             "screenResolution",
-            "sessionStorage",
-            // "timezoneOffset",
-            "touchSupport",
-            "userAgent",
-            "webGl"
+            "timezoneOffset"
         ];
-    
-        imprint.test(browserTests).then(function(result){
+        imprint.test(deviceTests).then(function(result){
           console.log(result);
         });
     
