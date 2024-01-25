@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/imprintjs@1.0.0/dist/imprint.min.js"></script>
 </head>
 <body>
-    Hello
+    <script type="text/javascript">
+    
+        var browserTests = [
+            "audio",
+            "availableScreenResolution",
+            "canvas",
+            "colorDepth",
+            "cookies",
+            "cpuClass",
+            "deviceDpi",
+            "doNotTrack",
+            "indexedDb",
+            "installedFonts",
+            "language",
+            "localIp",
+            "localStorage",
+            "pixelRatio",
+            "platform",
+            "plugins",
+            "processorCores",
+            "screenResolution",
+            "sessionStorage",
+            "timezoneOffset",
+            "touchSupport",
+            "userAgent",
+            "webGl"
+        ];
+    
+        imprint.test(browserTests).then(function(result){
+          console.log(result);
+        });
+    
+    </script>
 </body>
 </html>
